@@ -7,7 +7,7 @@ export default function Skills() {
   useEffect(() => {
     const getSkills = async () => {
       const { data } = await axios(
-        "http://localhost:5000/api/v1/skill/getall",
+        "https://portfolio-backend-q094.onrender.com/api/v1/skill/getall",
         {
           withCredentials: true,
         }

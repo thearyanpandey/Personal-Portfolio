@@ -10,7 +10,7 @@ export default function BlogCard() {
   useEffect(() => {
     const getUser = async () => {
       const { data } = await axios(
-        "http://localhost:5000/api/v1/user/me",
+        "https://portfolio-backend-q094.onrender.com/api/v1/user/me",
         {
           withCredentials: true,
         }

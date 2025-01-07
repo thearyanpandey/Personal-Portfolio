@@ -15,11 +15,11 @@ const StatsCard = () => {
         // Make both requests concurrently
         const [projectsResponse, skillsResponse] = await Promise.all([
           fetch(
-            "http://localhost:5000/api/v1/project/getall",
+            "https://portfolio-backend-q094.onrender.com/api/v1/project/getall",
             fetchOptions
           ),
           fetch(
-            "http://localhost:5000/api/v1/skill/getall",
+            "https://portfolio-backend-q094.onrender.com/api/v1/skill/getall",
             fetchOptions
           ),
         ]);

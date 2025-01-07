@@ -18,9 +18,12 @@ const MeCard = () => {
 
   useEffect(() => {
     const getUser = async () => {
-      const { data } = await axios("http://localhost:5000/api/v1/user/me", {
-        withCredentials: true,
-      });
+      const { data } = await axios(
+        "https://portfolio-backend-q094.onrender.com/api/v1/user/me",
+        {
+          withCredentials: true,
+        }
+      );
       //console.log(data);
 
       setFirstName(data.user.firstName);
@@ -80,7 +83,9 @@ const MeCard = () => {
         />
       </div>
       <div className="p-6">
-        <h2 className="text-2xl font-bold mb-1">{firstname + " " + lastname} </h2>
+        <h2 className="text-2xl font-bold mb-1">
+          {firstname + " " + lastname}{" "}
+        </h2>
         <p className="text-gray-400 text-sm mb-4">@{firstname.toLowerCase()}</p>
         <div className="flex justify-between mb-6">
           {icons.map(({ name, component: Icon }, index) => (

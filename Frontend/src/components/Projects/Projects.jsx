@@ -12,7 +12,7 @@ function Projects() {
     const getProjects = async () => {
       try {
         const { data } = await axios(
-          "http://localhost:5000/api/v1/project/getall",
+          "https://portfolio-backend-q094.onrender.com/api/v1/project/getall",
           {
             withCredentials: true,
           }

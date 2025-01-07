@@ -82,7 +82,7 @@ export default function SkillsCarousel() {
     const getSkills = async () => {
       try {
         const { data } = await axios(
-          "http://localhost:5000/api/v1/skill/getall",
+          "https://portfolio-backend-q094.onrender.com/api/v1/skill/getall",
           {
             withCredentials: true,
           }

@@ -19,7 +19,7 @@ export default function ProfileCard() {
   useEffect(() => {
     const getMyProjects = async () => {
       const { data } = await axios.get(
-        "http://localhost:5000/api/v1/user/portfolio/me",
+        "https://portfolio-backend-q094.onrender.com/api/v1/user/portfolio/me",
         { withCredentials: true }
       );
       //console.log(data);

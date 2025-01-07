@@ -12,7 +12,7 @@ const SelfSummary = () => {
     const getUser = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/v1/user/me",
+          "https://portfolio-backend-q094.onrender.com/api/v1/user/me",
           { withCredentials: true }
         );
 
@@ -41,9 +41,9 @@ const SelfSummary = () => {
           <span className="ml-2">✧</span>
         </h1>
         {/*pt-24 down there*/}
-        <div className="bg-custom-gradient shadow-lg rounded-2xl p-8 "> 
+        <div className="bg-custom-gradient shadow-lg rounded-2xl p-8 ">
           <h2 className="text-white text-4xl font-semibold mb-2">
-            {firstName + " "+ lastName || "Loading..."}
+            {firstName + " " + lastName || "Loading..."}
           </h2>
           <p className="text-gray-400 text-lg">{aboutMe || "Loading..."}</p>
         </div>

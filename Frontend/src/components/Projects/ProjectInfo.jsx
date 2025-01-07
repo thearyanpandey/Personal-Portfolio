@@ -11,7 +11,7 @@ function ProjectInfo() {
     const getProject = async () => {
       try {
         const { data } = await axios(
-          `http://localhost:5000/api/v1/project/get/${id}`,
+          `https://portfolio-backend-q094.onrender.com/api/v1/project/get/${id}`,
           {
             withCredentials: true,
           }
