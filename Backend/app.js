@@ -19,8 +19,8 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.PORTFOLIO_URL, process.env.DASHBOARD_URL],
-    //origin: ["https://aryann-pandeyy-psi.vercel.app", "https://my-portfolio-dashboard-phi-green.vercel.app"],
+    //origin: [process.env.PORTFOLIO_URL, process.env.DASHBOARD_URL],
+    origin: ["myportfolioodashboard.vercel.app", "https://thearyanpandey.vercel.app"],
     method: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
