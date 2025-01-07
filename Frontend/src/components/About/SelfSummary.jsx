@@ -12,7 +12,7 @@ const SelfSummary = () => {
     const getUser = async () => {
       try {
         const { data } = await axios.get(
-          "https://portfolio-backend-q094.onrender.com/api/v1/user/me",
+          "https://portfolio-backend-q094.onrender.com/api/v1/user/portfolio/me",
           { withCredentials: true }
         );
 
