@@ -1,0 +1,121 @@
+import React from 'react';
+
+function App = () => {
+  return (
+    <div className="bg-black text-white min-h-screen">
+      <Header />
+      <main className="container mx-auto px-4 py-8">
+        <Hero />
+        <Stats />
+        <Services />
+        <Profiles />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+
+export default App;
+
+// Header component
+const Header = () => {
+  return (
+    <header className="flex justify-between items-center p-4">
+      <div className="text-2xl font-bold">GridX</div>
+      <nav>
+        <ul className="flex space-x-4">
+          <li><a href="#" className="hover:text-gray-300">Home</a></li>
+          <li><a href="#" className="hover:text-gray-300">About</a></li>
+          <li><a href="#" className="hover:text-gray-300">Works</a></li>
+          <li><a href="#" className="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+      <button className="bg-gray-700 px-4 py-2 rounded-full">Let's talk</button>
+    </header>
+  );
+};
+
+// Hero component
+const Hero = () => {
+  return (
+    <section className="grid grid-cols-3 gap-4 mb-8">
+      <div className="col-span-2 bg-gray-800 rounded-lg p-6">
+        <h1 className="text-4xl font-bold mb-2">David Henderson.</h1>
+        <p className="text-gray-400">I am a Web Designer based in san francisco.</p>
+      </div>
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-xl font-semibold mb-2">Credentials</h2>
+        {/* Add credentials content */}
+      </div>
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-xl font-semibold mb-2">Projects</h2>
+        {/* Add projects content */}
+      </div>
+    </section>
+  );
+};
+
+// Stats component
+const Stats = () => {
+  return (
+    <section className="grid grid-cols-4 gap-4 mb-8">
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-4xl font-bold">07</h2>
+        <p className="text-sm text-gray-400">YEARS EXPERIENCE</p>
+      </div>
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-4xl font-bold">+125</h2>
+        <p className="text-sm text-gray-400">CLIENTS WORLDWIDE</p>
+      </div>
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-4xl font-bold">+210</h2>
+        <p className="text-sm text-gray-400">TOTAL PROJECTS</p>
+      </div>
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-2xl font-bold">Let's work together.</h2>
+      </div>
+    </section>
+  );
+};
+
+// Services component
+const Services = () => {
+  return (
+    <section className="grid grid-cols-3 gap-4 mb-8">
+      <div className="bg-gray-800 rounded-lg p-6">
+        <div className="text-3xl mb-2">AB</div>
+        <h2 className="text-xl font-semibold mb-2">GFonts</h2>
+        <p className="text-sm text-gray-400">BLOG</p>
+      </div>
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-xl font-semibold mb-2">Services Offering</h2>
+        <p className="text-sm text-gray-400">SPECIALIZATION</p>
+        {/* Add service icons */}
+      </div>
+      <div className="bg-gray-800 rounded-lg p-6">
+        <h2 className="text-xl font-semibold mb-2">Profiles</h2>
+        <p className="text-sm text-gray-400">STAY WITH ME</p>
+        {/* Add social media icons */}
+      </div>
+    </section>
+  );
+};
+
+// Profiles component (for social media icons)
+const Profiles = () => {
+  return (
+    <div className="flex space-x-4">
+      <a href="#" className="text-2xl">🏀</a>
+      <a href="#" className="text-2xl">🐦</a>
+    </div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="text-center py-4">
+      <p>&copy; 2024 GridX. All rights reserved.</p>
+    </footer>
+  );
+};

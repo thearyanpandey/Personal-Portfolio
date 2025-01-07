@@ -1,0 +1,11 @@
+# Backend node_modules
+/Backend/node_modules/
+
+# Frontend node_modules
+/Frontend/node_modules/
+
+# Dashboard node_modules
+/Dashboard/node_modules/
+
+# Additional common files to ignore
+/Backend/config/config.env
