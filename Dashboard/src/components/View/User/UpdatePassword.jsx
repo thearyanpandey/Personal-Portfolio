@@ -8,7 +8,7 @@ import {
   clearAllUserErrors,
   resetProfile,
   updatePassword,
-} from "@/store/slices/userSlice";
+} from "../../../Store/slices/userSlice";
 import SpecialLoadingButton from "../../sub-components/SpecialLoadingBtn";
 
 const UpdatePassword = () => {
